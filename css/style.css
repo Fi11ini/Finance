@@ -7,6 +7,17 @@
     box-sizing: border-box;
 }
 
+._container {
+    max-width: 1046px;
+    margin: 0px auto;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+
 a {
     text-decoration: none;
 }
@@ -14,7 +25,7 @@ a {
 ul,
 li,
 ol {
-    list-style: 0;
+    list-style: none;
 }
 
 img {
@@ -35,16 +46,44 @@ html,
 body {
     height: 100%;
     line-height: 1;
-    font-size: 16px;
-    color: black;
+    font-size: 14px;
+    color: #252B42;
+    font-family: Montserrat;
+    font-weight: 500;
 }
 
-.wrapper {
-    min-height: 100%;
-    overflow: hidden;
+/* ---------------------------------------- */
+
+
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+.header__container {
+    display: flex;
+    min-height: 104px;
+    align-items: center;
 }
 
-._container {
-    max-width: 1046px;
-    margin: 0px auto;
+.header__logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: inherit;
+}
+.header__menu {
+    margin: 0px 0px 0px 133px;
+}
+.menu {
+}
+.menu__list {
+}
+.menu__item {
+}
+.menu__link {
+    color: #737373;
+    line-height: 171%;
+    font-weight: 600;
 }
